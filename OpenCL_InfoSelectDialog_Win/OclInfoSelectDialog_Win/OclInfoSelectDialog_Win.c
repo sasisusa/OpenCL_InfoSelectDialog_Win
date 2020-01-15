@@ -24,12 +24,10 @@
 
 #define MAX_PLA_DEV_STRING_LEN 128
 #define MAX_LIST_INFO_STRING_LEN 128
-#define MAX_ALL_INFO 16384
 
 enum OCL_INFO_DATATYPE{
 	DTID_STRING, DTID_DEV_TYPE, DTID_UINT, DTID_ULONG, DTID_SIZE, DTID_SIZE_N_DIM, DTID_LOC_MEM_TYPE, DTID_SEP_LIST_STRING, DTID_BOOL
 };
-
 
 typedef struct OCLDEVIDtag{
 	unsigned int uiNumDev;
@@ -79,7 +77,6 @@ typedef struct INOUTOCLPLATDEVtag{
 	int iRequest;
 	int iRet;
 }INOUTOCLPLATDEV;
-
 
 
 const char *OclPlatformInfoToString(cl_platform_info clPlatInfo)
@@ -225,7 +222,6 @@ const char *OclDevieInfoToString(cl_device_info clDeviceInfo)
 }
 
 
-
 static int OclFreePlatformsAndDevices(OCLPLATDEVID *pOclPlatDev)
 {
 	HANDLE hHeap;
@@ -258,7 +254,6 @@ static int OclFreePlatformsAndDevices(OCLPLATDEVID *pOclPlatDev)
 
 	return 1;
 }
-
 
 
 static int OclGetPlatformsAndDevices(OCLPLATDEVID *pOclPlatDev)
