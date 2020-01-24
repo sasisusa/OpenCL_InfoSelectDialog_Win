@@ -1,5 +1,7 @@
 # OpenCL_InfoSelectDialog_Win
 
+(y 2016)
+
 ## What is OclInfoSelectDialog_Win?
 Dialog box for information and/or selection of an OpenCL platform or device in Windows (with WinAPI).
 
